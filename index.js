@@ -107,7 +107,7 @@ client.on("message", async message => {
     if(!member)
       return message.reply("DORU DEEL");
     if(!member.bannable) 
-      return message.reply("ROLU BENDEN DAHA YÜKSEK BUNUN AMK");
+      return message.reply("ROLU BENDEN DAHA YÃœKSEK BUNUN AMK");
 
     let reason = args.slice(1).join(' ');
     if(!reason) reason = "No reason provided";
@@ -134,4 +134,4 @@ client.on("message", async message => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
